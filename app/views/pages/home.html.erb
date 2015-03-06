@@ -1,0 +1,32 @@
+<%=@user %>
+<%=@cat %>
+<%=@todo %>
+
+<% for user in @user %>
+	<tr>
+		<p></p>
+		<td>Name: <%= user.name %></td>
+		<td>Email: <%= user.email %></td>
+		<td>age: <%= user.age %></td>
+		<p></p>
+	<tr>
+<%end%>
+
+
+<% for user in @cat %>
+	<tr>
+		<p></p>
+		<td>Name: <%= user.name %></td>
+		<p></p>
+	<tr>
+<%end%>
+
+<% for user in @todo %>
+	<tr>
+		<p></p>
+		<td>Name: <%= user.name %></td>
+		<td>Finished: <%= user.finished %></td>
+		
+		<p></p>
+	<tr>
+<%end%>
